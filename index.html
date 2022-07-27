@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form action="" name="calcular">
+            <div class="areas">
+                
+                <input class="area_num " type="textfield" name="valor" value="" readonly placeholder="0">
+            </div>
+            <div class="botones">
+                <input class="boton" type="reset" value="AC">
+                <button class="boton " name="data-operar">+/-</button>
+                <input class="boton" type="button" value="%" onclick="document.calcular.valor.value+='* 0.01'">
+                <input class="boton" type="button" value="÷" onclick="document.calcular.valor.value+='/'">
+                <input class="boton" type="button" value="7" onclick="document.calcular.valor.value+='7'">
+                <input class="boton" type="button" value="8" onclick="document.calcular.valor.value+='8'">
+                <input class="boton" type="button" value="9" onclick="document.calcular.valor.value+='9'">
+                <input class="boton" type="button" value="x" onclick="document.calcular.valor.value+='*'">
+                <input class="boton" type="button" value="4" onclick="document.calcular.valor.value+='4'">
+                <input class="boton" type="button" value="5" onclick="document.calcular.valor.value+='5'">
+                <input class="boton" type="button" value="6" onclick="document.calcular.valor.value+='6'">
+                <input class="boton" type="button" value="-" onclick="document.calcular.valor.value+='-'">
+                <input class="boton" type="button" value="1" onclick="document.calcular.valor.value+='1'">
+                <input class="boton" type="button" value="2" onclick="document.calcular.valor.value+='2'">
+                <input class="boton" type="button" value="3" onclick="document.calcular.valor.value+='3'">
+                <input class="boton" type="button" value="+" onclick="document.calcular.valor.value+='+'">
+                <input class=" mov1 " type="button" value="0" onclick="document.calcular.valor.value+='0'">
+                <input class="boton mov2 "type="button" value="." onclick="document.calcular.valor.value+='.'">
+                <input class="boton mov3 " type="button" value="=" onclick="document.calcular.valor.value=eval(document.calcular.valor.value)">
+            </div>
+
+
+
+        </form>
+    </div>
+ 
+</body>
+
+</html>
